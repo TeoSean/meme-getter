@@ -11,7 +11,7 @@ for img in images:
                                 pass
                 else:
                                 n='meme'+str(x)
-                                os.system('curl {} --output C:\\Users\woons\OneDrive\Desktop\Coding\Python\Memes\{}.jpg'.format(source, n))
+                                os.system('curl {} --output \path\to\meme\folder\{}.jpg'.format(source, n))
                                 print(source)
                                 x=x+1
                                 
