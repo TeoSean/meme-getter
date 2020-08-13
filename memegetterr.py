@@ -12,7 +12,7 @@ for img in images:
                 else:
                                 if 'i.redd.it' in source or 'preview.redd.it' in source:
                                                 n='meme'+str(x)
-                                                os.system('curl {} --output \path\here'.format(source, n))
+                                                os.system('curl {} --output \path\to\meme\folder\{}.jpg'.format(source, n))
                                                 print(source)
                                                 x=x+1
                                 else:
