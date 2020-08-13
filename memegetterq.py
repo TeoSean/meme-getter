@@ -1,8 +1,8 @@
 from selenium import webdriver
 import os
 import urllib.request
-driver=webdriver.Chrome('C:\\Users\woons\chromedriver.exe')
-driver.get('')
+driver=webdriver.Chrome('\path\to\chromedriver')
+driver.get('quora link here')
 images=driver.find_elements_by_tag_name('img')
 x=1
 for img in images:
