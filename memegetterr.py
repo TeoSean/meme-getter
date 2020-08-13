@@ -1,8 +1,8 @@
 from selenium import webdriver
 import os
 import urllib.request
-driver=webdriver.Chrome('C:\\Users\woons\chromedriver.exe')
-driver.get('')
+driver=webdriver.Chrome('\path\to\chromedriver')
+driver.get('link here')
 images=driver.find_elements_by_tag_name('img')
 x=1
 for img in images:
@@ -12,7 +12,7 @@ for img in images:
                 else:
                                 if 'i.redd.it' in source or 'preview.redd.it' in source:
                                                 n='meme'+str(x)
-                                                os.system('curl {} --output C:\\Users\woons\OneDrive\Desktop\Coding\Python\Memes\{}.jpg'.format(source, n))
+                                                os.system('curl {} --output \path\here'.format(source, n))
                                                 print(source)
                                                 x=x+1
                                 else:
